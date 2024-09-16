@@ -183,10 +183,6 @@ ensure_renv_precommit_compat <- function(package_version_renv = utils::packageVe
       return()
     }
     config_lines <- readLines(path_config, encoding = "UTF-8")
-    has_renv <- fs::file_exists("renv.lock")
-    if (!has_renv) {
-      return()
-    }
 
     rev <- rev_read(path_config)
     should_fail <- rlang::try_fetch(
