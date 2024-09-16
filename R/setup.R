@@ -149,7 +149,7 @@ use_ci <- function(ci = getOption("precommit.ci", "native"),
 autoupdate <- function(root = here::here()) {
   withr::with_dir(root, {
     assert_correct_upstream_repo_url()
-    ensure_renv_precommit_compat(root = root)
+    # ensure_renv_precommit_compat(root = root)
     out <- call_precommit("autoupdate")
     if (out$exit_status == 0) {
       cli::cli_alert_success(paste0(
