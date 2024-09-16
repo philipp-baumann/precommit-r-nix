@@ -1,4 +1,3 @@
-#!/usr/bin/env Rscript
 'style files.
 Usage:
   style_files [--style_pkg=<style_guide_pkg>] [--style_fun=<style_guide_fun>] [--cache-root=<cache_root_>] [--no-warn-cache] [--ignore-start=<ignore_start_>] [--ignore-stop=<ignore_stop_>] <files>...
